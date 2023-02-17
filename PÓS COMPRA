@@ -1,0 +1,51 @@
+#FEEDBACK LOJA ONLINE
+while True:
+    mensagem = input("Muito obrigado pela sua compra! Você poderia avaliar a sua experiência de compra? ")
+    if mensagem.lower() == "não":
+        print("Que pena! Obrigado de qualquer forma.")
+        break
+    elif mensagem.lower() == "sim":
+        print("Que ótimo! São apenas 5 perguntinhas :)")
+        break
+    else:
+        print("Desculpe, não entendi sua resposta. Por favor responda 'sim' ou 'não'.")
+
+while True:
+    mensagem = input("De 0 a 10. Qual nota você daria para a nossa variedade de produto? ")
+    if mensagem.isdigit() and 0 <= int(mensagem) <= 10:
+        print("Certo!")
+        break
+    else:
+        print("Por favor, insira um número de 0 a 10.")
+
+while True:
+    mensagem = input("Qual nota você daria para a facilidade de compra? ")
+    if mensagem.isdigit() and 0 <= int(mensagem) <= 10:
+        print("Só mais 3 perguntinhas!")
+        break
+    else:
+        print("Por favor, insira um número de 0 a 10.")
+
+while True:
+    mensagem = input("Qual a possibilidade de você recomendar nossa loja para um amigo? ")
+    if mensagem.isdigit() and 0 <= int(mensagem) <= 10:
+        print("Está quase acabando.")
+        break
+    else:
+        print("Por favor, insira um número de 0 a 10.")
+
+while True:
+    mensagem = input("Qual nota você daria para os nossos preços? ")
+    if mensagem.isdigit() and 0 <= int(mensagem) <= 10:
+        print("Anotado. Agora é a ultima pergunta.")
+        break
+    else:
+        print("Por favor, insira um número de 0 a 10")
+
+while True:
+    mensagem = input("Qual nota você daria para a navegação da nossa loja online? ")
+    if mensagem.isdigit() and 0 <= int(mensagem) <= 10:
+        print("Muito obrigado por ajudar a melhorar nosso site. Como recompensa, você ganhou um cupom de frete grátis para a próxima compra. CUPOM: FEED10.")
+        break
+    else:
+        print("Por favor, insira um número de 0 a 10.")
